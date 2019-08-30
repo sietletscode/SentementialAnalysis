@@ -4,10 +4,11 @@ from textblob import TextBlob
 print('Sentimental Analysis')
 """ Sentimential Analysyis is used to measure the polarity of a given text 
     Algorithm Natural Language Processing is used where a given text is divided into Lexiams or 
-	token and each token is seperatly analysed """
-auth = tweepy.OAuthHandler('7ueNHhXrcNVPVU6dFfHR1ihDP','vNhCCTHE6IsT6DNtPOol0mIbnvSC4huA1y57trwXPmxMRdlybz')
+	token and each token is seperatly analysed
+	Enter the key1,key2,Auth1,Auth2 given via twitter"""
+auth = tweepy.OAuthHandler('key1','key2')
 #To auth the developer
-auth.set_access_token('839480539098796033-ybDruAv4ATW6VhYeOC3mQByCGQcdEUk','xhMwJsCJOBoCXcpbsk9lIcx18WW5fGTVUmpAtw2a7rfDV')
+auth.set_access_token('Auth1','Auth2')
 #to access the api created by a app via twitter
 api = tweepy.API(auth)
 #authorization 
